@@ -1047,6 +1047,8 @@ static void ProcessKernelCmdline() {
             for_emulator = true;
         } else if (StartsWith(key, "androidboot.")) {
             InitPropertySet("ro.boot." + key.substr(12), value);
+        } else if (StartsWith(key, "ro.")) {
+            InitPropertySet(key, value);
         }
     });
 
