@@ -13,9 +13,9 @@ subsystem drm
     dirname /dev/dri
 
 # HACKED
-#subsystem input
-#    devname uevent_devpath
-#    dirname /dev/input
+subsystem input
+    devname uevent_devpath
+    dirname /dev/input
 
 subsystem sound
     devname uevent_devpath
